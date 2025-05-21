@@ -1,0 +1,634 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.3.2",
+  "deps": {
+    "@nestjs/common": "^10.0.2",
+    "@nestjs/core": "^10.0.2",
+    "@nestjs/platform-express": "^10.0.2",
+    "axios": "^1.6.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.3.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "@biomejs/biome": "1.5.3",
+    "@nestjs/schematics": "^10.0.1",
+    "@nestjs/testing": "^10.0.2",
+    "@nx/devkit": "^17.3.2",
+    "@nx/jest": "^17.3.2",
+    "@nx/js": "^17.3.2",
+    "@nx/nest": "^17.3.2",
+    "@nx/node": "^17.3.2",
+    "@nx/playwright": "^17.3.2",
+    "@nx/vite": "^17.3.2",
+    "@nx/vue": "^17.3.2",
+    "@nx/web": "^17.3.2",
+    "@nx/webpack": "^17.3.2",
+    "@nx/workspace": "^17.3.2",
+    "@playwright/test": "^1.36.0",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@swc/helpers": "~0.5.2",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitest/coverage-v8": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "@vue/test-utils": "^2.4.1",
+    "husky": "^9.0.0",
+    "jest": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "jsdom": "~22.1.0",
+    "nx": "^17.3.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.4",
+    "vue-tsc": "^1.8.8"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/vite-8674924989244342134.hash",
+        "hash": "11592991133125470251"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9102149763769117252.hash",
+        "hash": "12353537219289343089"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "11348415346950092005"
+      },
+      {
+        "file": ".nx/workspace-data/vite-4243829038352391458.hash",
+        "hash": "13044047191478775570"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "3638800374628912972"
+      },
+      {
+        "file": ".nx/workspace-data/vite-11371612454756527241.hash",
+        "hash": "9686065506833178896"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7108390443100806406.hash",
+        "hash": "8518840845025501497"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9759636397879655828.hash",
+        "hash": "9927674785573605802"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2275830012627963094.hash",
+        "hash": "13494810973336654648"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8328925767850757113.hash",
+        "hash": "2018637147893496884"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6192420364374045220.hash",
+        "hash": "6685550239101275151"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8148717256063622458.hash",
+        "hash": "16087957638486673860"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1654689113878199329.hash",
+        "hash": "11343279133767083866"
+      },
+      {
+        "file": ".nx/workspace-data/vite-502708058534190735.hash",
+        "hash": "7378157886168710123"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1012271321963600305.hash",
+        "hash": "12682272827410340178"
+      },
+      {
+        "file": ".nx/workspace-data/vite-11117452159798470728.hash",
+        "hash": "7653733454895169673"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3424336211552597645.hash",
+        "hash": "17384193270012029798"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13129312200079189400.hash",
+        "hash": "4958315786781801408"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "6934054643064367061"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13418140135462005685.hash",
+        "hash": "18318676008897884632"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15601673412306068382.hash",
+        "hash": "5516260521846796063"
+      },
+      {
+        "file": ".nx/workspace-data/vite-14277562653054645082.hash",
+        "hash": "8125486265097104840"
+      },
+      {
+        "file": ".nx/workspace-data/vite-17535342935816332028.hash",
+        "hash": "3683443487020546670"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17554676857246940898"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7751573269960995590.hash",
+        "hash": "9796606510938469041"
+      },
+      {
+        "file": ".nx/workspace-data/vite-832915717698937059.hash",
+        "hash": "8633437743894208158"
+      },
+      {
+        "file": ".nx/workspace-data/vite-539642843417376811.hash",
+        "hash": "6737333535768611092"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3842594684950195159.hash",
+        "hash": "11458399240895859807"
+      },
+      {
+        "file": ".nx/workspace-data/vite-5774453418498571336.hash",
+        "hash": "2010876520538918932"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6013079925318221001.hash",
+        "hash": "5861397409850098023"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1158264204318405664.hash",
+        "hash": "14342767869153288520"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2397987693336469993.hash",
+        "hash": "13988679528491054693"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1726336061770174817.hash",
+        "hash": "17997854151257110652"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "14499436983279762445"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7964178915415389132.hash",
+        "hash": "16622998675652028967"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7357522164909363714.hash",
+        "hash": "1593059142461674532"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13583316567534107245.hash",
+        "hash": "16828952386396563133"
+      },
+      {
+        "file": ".nx/workspace-data/vite-12400623468796927333.hash",
+        "hash": "9270736735405140867"
+      },
+      {
+        "file": ".nx/workspace-data/vite-4055722016676086802.hash",
+        "hash": "7937794832402355608"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15456376236664701693.hash",
+        "hash": "4699299756441965272"
+      },
+      {
+        "file": ".nx/workspace-data/vite-5541822971102165081.hash",
+        "hash": "15445906036442047771"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3298152227942258017.hash",
+        "hash": "17779337465722608706"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3877010263541889062.hash",
+        "hash": "10229833096103972500"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9162137247880849592.hash",
+        "hash": "7118938941283760"
+      },
+      {
+        "file": ".nx/workspace-data/vite-10669335388175836997.hash",
+        "hash": "15317288808033401281"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13734866762218327934.hash",
+        "hash": "7416459603738419173"
+      },
+      {
+        "file": ".nx/workspace-data/vite-12285808147781870852.hash",
+        "hash": "3320694950025623200"
+      },
+      {
+        "file": ".nx/workspace-data/vite-11719948346154620684.hash",
+        "hash": "8317444968093483179"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "16810006709433339130"
+      },
+      {
+        "file": ".nx/workspace-data/vite-17751747766453321196.hash",
+        "hash": "15975730446802740336"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9396084283306012713.hash",
+        "hash": "4651611398642765443"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15596317889630545953.hash",
+        "hash": "9959140420443327363"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3688752510799601687.hash",
+        "hash": "4450714999774684573"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "17915298395976807676"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "5678795146302816534"
+      },
+      {
+        "file": "biome.json",
+        "hash": "4311467223204263113"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8408390733317344948.hash",
+        "hash": "17616672316498935657"
+      },
+      {
+        "file": ".nx/workspace-data/vite-18277047449662443493.hash",
+        "hash": "8507917302342041030"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9347777721732807074.hash",
+        "hash": "15005492304848930139"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1479475881587875934.hash",
+        "hash": "6508806635423864822"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "10072444163671974570"
+      },
+      {
+        "file": ".nx/workspace-data/vite-18243986715075306619.hash",
+        "hash": "9575261044400394608"
+      },
+      {
+        "file": ".nx/workspace-data/vite-18274314670772406987.hash",
+        "hash": "13381897984616665145"
+      },
+      {
+        "file": ".nx/workspace-data/vite-14478609076203394513.hash",
+        "hash": "5455199645529526154"
+      },
+      {
+        "file": ".nx/workspace-data/vite-5191614610697820904.hash",
+        "hash": "2269391305299120067"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9282920680385181220.hash",
+        "hash": "10899914088510322529"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6412837416458258017.hash",
+        "hash": "10896235789159111377"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7307475637969580540"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13167358615018463280.hash",
+        "hash": "10891847069506395342"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15740786621363335092.hash",
+        "hash": "11688713081619953429"
+      },
+      {
+        "file": ".nx/workspace-data/vite-10114150954737933959.hash",
+        "hash": "12158937375509103668"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15536173400677165455.hash",
+        "hash": "5188018299028449367"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1339879831797166247.hash",
+        "hash": "6521352989976312885"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9986864154427642970.hash",
+        "hash": "2868582292183122422"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13558082006906721404.hash",
+        "hash": "1590892457831123631"
+      },
+      {
+        "file": ".nx/workspace-data/vite-5091745722933153453.hash",
+        "hash": "2299788494315002749"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2906320112190007101.hash",
+        "hash": "46021245983119812"
+      },
+      {
+        "file": ".nx/workspace-data/vite-16174950187967713293.hash",
+        "hash": "13829675517778127971"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8806905380762776914.hash",
+        "hash": "3086027056382662250"
+      },
+      {
+        "file": ".nx/workspace-data/vite-1984475210509020731.hash",
+        "hash": "12476134971767220376"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7702817378488938789.hash",
+        "hash": "16183536496955027923"
+      },
+      {
+        "file": ".nx/workspace-data/vite-14005092734563747637.hash",
+        "hash": "13116876348586992042"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2147619663598916604.hash",
+        "hash": "2387871400972236858"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3222071311663323633.hash",
+        "hash": "13584045664785857263"
+      },
+      {
+        "file": ".nx/workspace-data/vite-15449142954119877012.hash",
+        "hash": "8810585792524750742"
+      },
+      {
+        "file": ".nx/workspace-data/vite-17921428165011913163.hash",
+        "hash": "8938960973202662531"
+      },
+      {
+        "file": ".nx/workspace-data/vite-17831961388934677504.hash",
+        "hash": "14634729025974361789"
+      },
+      {
+        "file": ".nx/workspace-data/c3727f02-958d-4dbd-9f75-37bf43b50486.db",
+        "hash": "12733800868318481986"
+      },
+      {
+        "file": ".nx/workspace-data/vite-10709200533950749183.hash",
+        "hash": "6258838156997785450"
+      },
+      {
+        "file": ".nx/workspace-data/vite-9197758789604752305.hash",
+        "hash": "15788156786660451159"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8616533264779991578.hash",
+        "hash": "2325742260832239429"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8141566618636248751.hash",
+        "hash": "10275766957583539345"
+      },
+      {
+        "file": ".nx/workspace-data/vite-8485780055163948408.hash",
+        "hash": "7405174643175788508"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3765445226523196632.hash",
+        "hash": "12641927391430645963"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2404982143176001416.hash",
+        "hash": "6613926921041575178"
+      },
+      {
+        "file": ".nx/workspace-data/vite-7602194170801333540.hash",
+        "hash": "939508383461061180"
+      },
+      {
+        "file": ".nx/workspace-data/vite-12424033000032707331.hash",
+        "hash": "14923315946523097947"
+      },
+      {
+        "file": ".nx/workspace-data/vite-2146180154121199283.hash",
+        "hash": "5221265143622397200"
+      },
+      {
+        "file": ".nx/workspace-data/vite-283777986159766181.hash",
+        "hash": "6931202086457894492"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6523558259169863660.hash",
+        "hash": "8776774564218330144"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6421666411244804429.hash",
+        "hash": "4507642093579603213"
+      },
+      {
+        "file": ".nx/workspace-data/vite-14091417818547843014.hash",
+        "hash": "1883076517881473046"
+      },
+      {
+        "file": "package.json",
+        "hash": "14072934132964710923"
+      },
+      {
+        "file": ".nx/workspace-data/nuxt.hash",
+        "hash": "1389868326933519382"
+      },
+      {
+        "file": ".nx/workspace-data/vite-13491458370675079523.hash",
+        "hash": "11577511742121443554"
+      },
+      {
+        "file": ".nx/workspace-data/vite-6207374204915136621.hash",
+        "hash": "4967803392198535971"
+      },
+      {
+        "file": ".nx/workspace-data/vite-10192129967637072039.hash",
+        "hash": "5605627068087874454"
+      },
+      {
+        "file": ".nx/workspace-data/nx_files.nxt",
+        "hash": "12514930809433544529"
+      },
+      {
+        "file": "nx.json",
+        "hash": "18213524860311122402"
+      },
+      {
+        "file": ".nx/workspace-data/vite-3409690683195033226.hash",
+        "hash": "12141951078883507650"
+      },
+      {
+        "file": ".nx/workspace-data/vite-17338339277518878285.hash",
+        "hash": "2208938311078304170"
+      }
+    ],
+    "projectFileMap": {
+      "backoffice": [
+        {
+          "file": "apps/backoffice/.eslintrc.json",
+          "hash": "14341420822390559472"
+        },
+        {
+          "file": "apps/backoffice/index.html",
+          "hash": "996594012986958224"
+        },
+        {
+          "file": "apps/backoffice/project.json",
+          "hash": "10778954172964639496"
+        },
+        {
+          "file": "apps/backoffice/src/features/App.spec.ts",
+          "hash": "2109380146092095785",
+          "deps": [
+            "npm:vitest",
+            "npm:@vue/test-utils"
+          ]
+        },
+        {
+          "file": "apps/backoffice/src/features/App.vue",
+          "hash": "13711524085917720759",
+          "deps": [
+            "npm:vue-router"
+          ]
+        },
+        {
+          "file": "apps/backoffice/src/main.ts",
+          "hash": "15824323441352504211",
+          "deps": [
+            "npm:vue"
+          ]
+        },
+        {
+          "file": "apps/backoffice/src/router/index.ts",
+          "hash": "16358152312871850972",
+          "deps": [
+            "npm:vue-router"
+          ]
+        },
+        {
+          "file": "apps/backoffice/src/styles.css",
+          "hash": "97131783897646283"
+        },
+        {
+          "file": "apps/backoffice/src/views/AboutView.vue",
+          "hash": "16824834101219002222"
+        },
+        {
+          "file": "apps/backoffice/src/views/HomeView.vue",
+          "hash": "8704815797242267879"
+        },
+        {
+          "file": "apps/backoffice/vite.config.ts",
+          "hash": "9256517999971958643",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-vue",
+            "npm:@nx/vite/plugins/nx-tsconfig-paths.plugin"
+          ]
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "9483968714649439783"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "2793506640413373227"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "15994051835005485682",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/app.controller.spec.ts",
+          "hash": "9499997688052526633",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/app.controller.ts",
+          "hash": "9005150069945785676",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/app.module.ts",
+          "hash": "3163250445227373966",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/app.service.spec.ts",
+          "hash": "8587461140686713758",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "5708803163266262522",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "12702311813890680256"
+        }
+      ]
+    }
+  }
+}

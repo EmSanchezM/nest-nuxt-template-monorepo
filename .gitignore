@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+.pnpm-store/
+
+# Build outputs
+dist
+build
+.nuxt
+.output
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage
+
+# Misc
+.DS_Store
+*.pem
+.cache
+.temp 

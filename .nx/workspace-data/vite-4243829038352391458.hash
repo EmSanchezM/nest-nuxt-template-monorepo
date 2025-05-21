@@ -1,0 +1,199 @@
+{
+  "3478102234767438234apps/backoffice/vite.config.ts": {
+    "targets": {
+      "vite:test": {
+        "command": "vitest",
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          {
+            "externalDependencies": [
+              "vitest"
+            ]
+          },
+          {
+            "env": "CI"
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}\\coverage\\apps\\backoffice"
+        ],
+        "metadata": {
+          "technologies": [
+            "vite"
+          ],
+          "description": "Run Vite tests",
+          "help": {
+            "command": "pnpm exec vitest --help",
+            "example": {
+              "options": {
+                "bail": 1,
+                "coverage": true
+              }
+            }
+          }
+        }
+      },
+      "vite:build": {
+        "command": "vite build",
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "cache": true,
+        "dependsOn": [
+          "^vite:build"
+        ],
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "vite"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}\\dist\\apps\\backoffice"
+        ],
+        "metadata": {
+          "technologies": [
+            "vite"
+          ],
+          "description": "Run Vite build",
+          "help": {
+            "command": "pnpm exec vite build --help",
+            "example": {
+              "options": {
+                "sourcemap": true,
+                "manifest": "manifest.json"
+              }
+            }
+          }
+        }
+      },
+      "serve": {
+        "continuous": true,
+        "command": "vite",
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "metadata": {
+          "technologies": [
+            "vite"
+          ],
+          "description": "Starts Vite dev server",
+          "help": {
+            "command": "pnpm exec vite --help",
+            "example": {
+              "options": {
+                "port": 3000
+              }
+            }
+          },
+          "deprecated": "Use devTargetName instead. This option will be removed in Nx 22."
+        }
+      },
+      "dev": {
+        "continuous": true,
+        "command": "vite",
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "metadata": {
+          "technologies": [
+            "vite"
+          ],
+          "description": "Starts Vite dev server",
+          "help": {
+            "command": "pnpm exec vite --help",
+            "example": {
+              "options": {
+                "port": 3000
+              }
+            }
+          }
+        }
+      },
+      "preview": {
+        "continuous": true,
+        "command": "vite preview",
+        "dependsOn": [
+          "vite:build"
+        ],
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "metadata": {
+          "technologies": [
+            "vite"
+          ],
+          "description": "Locally preview Vite production build",
+          "help": {
+            "command": "pnpm exec vite preview --help",
+            "example": {
+              "options": {
+                "port": 3000
+              }
+            }
+          }
+        }
+      },
+      "serve-static": {
+        "continuous": true,
+        "executor": "@nx/web:file-server",
+        "options": {
+          "buildTarget": "vite:build",
+          "spa": true
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc --noEmit -p tsconfig.app.json",
+        "options": {
+          "cwd": "apps/backoffice"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "continuous": true,
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects backoffice --includeDependentProjects -- pnpm exec nx build-deps backoffice"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  }
+}
