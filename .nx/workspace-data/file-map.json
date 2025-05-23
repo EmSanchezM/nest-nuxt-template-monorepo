@@ -16,40 +16,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "biome.json",
-        "hash": "4311467223204263113"
-      },
-      {
-        "file": "package.json",
-        "hash": "1739976126911674604"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "5495890336513577058"
-      },
-      {
-        "file": "nx.json",
-        "hash": "18113526960257596002"
+        "file": "pnpm-lock.yaml",
+        "hash": "16907711017341239766"
       },
       {
         "file": ".vscode/extensions.json",
         "hash": "13377419431693519786"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
+        "file": ".npmrc",
+        "hash": "10072444163671974570"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "16907711017341239766"
+        "file": "nx.json",
+        "hash": "18113526960257596002"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8366194691793642133"
+      },
+      {
+        "file": "package.json",
+        "hash": "1739976126911674604"
+      },
+      {
+        "file": "biome.json",
+        "hash": "4311467223204263113"
       },
       {
         "file": ".gitignore",
         "hash": "12856720411541793921"
       },
       {
-        "file": ".npmrc",
-        "hash": "10072444163671974570"
+        "file": "pnpm-workspace.yaml",
+        "hash": "5495890336513577058"
       }
     ],
     "projectFileMap": {
@@ -124,7 +124,7 @@
         },
         {
           "file": "apps/api/src/app.module.ts",
-          "hash": "1575026953024444979",
+          "hash": "17336111856962853105",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -139,14 +139,17 @@
         },
         {
           "file": "apps/api/src/modules/health-check/health-check.controller.ts",
-          "hash": "12905833195434566595",
+          "hash": "4306584087696115442",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
           "file": "apps/api/src/modules/health-check/health-check.module.ts",
-          "hash": "3244421341483603138"
+          "hash": "17436341397981248600",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
         },
         {
           "file": "apps/api/tsconfig.app.json",

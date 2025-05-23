@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {},
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "useDefineForClassFields": false
   },
   "exclude": ["node_modules", "tmp"]
 }
