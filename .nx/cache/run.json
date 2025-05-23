@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build backoffice",
+    "startTime": "2025-05-23T21:11:41.500Z",
+    "endTime": "2025-05-23T21:11:46.249Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "backoffice:build:production",
+      "target": "build",
+      "projectName": "backoffice",
+      "hash": "10392345346762882661",
+      "startTime": "2025-05-23T21:11:41.516Z",
+      "endTime": "2025-05-23T21:11:46.227Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

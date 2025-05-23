@@ -2,112 +2,58 @@
   "version": "6.0",
   "nxVersion": "21.1.1",
   "pathMappings": {},
-  "nxJsonPlugins": [],
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/nuxt/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
   "fileMap": {
     "nonProjectFiles": [
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "17915298395976807676"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "7428334204224206802"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "17554676857246940898"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "10072444163671974570"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "7307475637969580540"
-      },
-      {
-        "file": "package.json",
-        "hash": "14072934132964710923"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14360987708264894358"
-      },
       {
         "file": "biome.json",
         "hash": "4311467223204263113"
       },
       {
+        "file": "package.json",
+        "hash": "1739976126911674604"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "5495890336513577058"
+      },
+      {
+        "file": "nx.json",
+        "hash": "18113526960257596002"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13377419431693519786"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "16936441711144470533"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "16907711017341239766"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12856720411541793921"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "10072444163671974570"
       }
     ],
     "projectFileMap": {
-      "api": [
-        {
-          "file": "apps/api/jest.config.ts",
-          "hash": "9483968714649439783"
-        },
-        {
-          "file": "apps/api/project.json",
-          "hash": "18234814057025887848"
-        },
-        {
-          "file": "apps/api/src/main.ts",
-          "hash": "15994051835005485682",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/app.controller.spec.ts",
-          "hash": "9499997688052526633",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/app.controller.ts",
-          "hash": "9005150069945785676",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/app.module.ts",
-          "hash": "3163250445227373966",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/app.service.spec.ts",
-          "hash": "8587461140686713758",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/webpack.config.js",
-          "hash": "5708803163266262522",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
       "backoffice": [
-        {
-          "file": "apps/backoffice/.eslintrc.json",
-          "hash": "14341420822390559472"
-        },
         {
           "file": "apps/backoffice/index.html",
           "hash": "996594012986958224"
@@ -130,10 +76,6 @@
           "deps": [
             "npm:vue-router"
           ]
-        },
-        {
-          "file": "apps/backoffice/src/features/NxWelcome.vue",
-          "hash": "12653538104829253525"
         },
         {
           "file": "apps/backoffice/src/main.ts",
@@ -159,7 +101,7 @@
         },
         {
           "file": "apps/backoffice/src/views/HomeView.vue",
-          "hash": "9658841223355222887"
+          "hash": "8704815797242267879"
         },
         {
           "file": "apps/backoffice/vite.config.ts",
@@ -169,6 +111,118 @@
             "npm:@vitejs/plugin-vue",
             "npm:@nx/vite"
           ]
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "9483968714649439783"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "2793506640413373227"
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "1575026953024444979",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "12816637178049579694",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/health-check/health-check.controller.ts",
+          "hash": "12905833195434566595",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/health-check/health-check.module.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "12702311813890680256"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "5708803163266262522",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "client-portal": [
+        {
+          "file": "apps/client-portal/.npmrc",
+          "hash": "1829183420567411207"
+        },
+        {
+          "file": "apps/client-portal/nuxt.config.ts",
+          "hash": "18266412584506388715",
+          "deps": [
+            "npm:@nx/vite",
+            "npm:nuxt"
+          ]
+        },
+        {
+          "file": "apps/client-portal/project.json",
+          "hash": "16744334540222211081"
+        },
+        {
+          "file": "apps/client-portal/src/app.vue",
+          "hash": "2796453627666825624"
+        },
+        {
+          "file": "apps/client-portal/src/assets/css/styles.css",
+          "hash": "97131783897646283"
+        },
+        {
+          "file": "apps/client-portal/src/components/NxWelcome.vue",
+          "hash": "12964899898315031464"
+        },
+        {
+          "file": "apps/client-portal/src/pages/about.vue",
+          "hash": "7388615012605336437"
+        },
+        {
+          "file": "apps/client-portal/src/pages/index.vue",
+          "hash": "16098466263576207896"
+        },
+        {
+          "file": "apps/client-portal/src/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/client-portal/src/public/favicon.ico",
+          "hash": "6004808206618708045"
+        },
+        {
+          "file": "apps/client-portal/src/server/api/greet.ts",
+          "hash": "16792560205052821447",
+          "deps": [
+            "npm:h3"
+          ]
+        },
+        {
+          "file": "apps/client-portal/src/server/tsconfig.json",
+          "hash": "17370918167236968955"
+        },
+        {
+          "file": "apps/client-portal/tsconfig.app.json",
+          "hash": "6340688967805807235"
+        },
+        {
+          "file": "apps/client-portal/tsconfig.json",
+          "hash": "681495875425632656"
         }
       ]
     }

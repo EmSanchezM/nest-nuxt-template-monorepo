@@ -1,4 +1,202 @@
 {
+  "apps/client-portal": {
+    "root": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.options": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.cache": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build.options.command": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve.options": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve.continuous": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve.executor": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve.options.command": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.options": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.options.staticFilePath": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.options.port": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.options": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.cache": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.dependsOn": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.inputs": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.outputs": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.executor": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.options.cwd": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-static.options.command": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/client-portal/nuxt.config.ts",
+      "@nx/nuxt/plugin"
+    ],
+    "name": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "apps/client-portal/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
   "apps/api": {
     "root": [
       "apps/api/project.json",
@@ -72,10 +270,6 @@
       "apps/api/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.options.assets": [
-      "apps/api/project.json",
-      "nx/core/project-json"
-    ],
     "targets.build.options.webpackConfig": [
       "apps/api/project.json",
       "nx/core/project-json"
@@ -109,10 +303,6 @@
       "nx/core/project-json"
     ],
     "targets.serve.options.buildTarget": [
-      "apps/api/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.options.watch": [
       "apps/api/project.json",
       "nx/core/project-json"
     ],
@@ -165,22 +355,6 @@
       "nx/target-defaults"
     ],
     "targets.build.parallelism": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.serve.cache": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.serve.dependsOn": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.serve.inputs": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.serve.parallelism": [
       "nx.json",
       "nx/target-defaults"
     ],

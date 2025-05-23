@@ -33,3 +33,6 @@ coverage
 *.pem
 .cache
 .temp 
+# Nuxt dev/build outputs
+.data
+.nitro
