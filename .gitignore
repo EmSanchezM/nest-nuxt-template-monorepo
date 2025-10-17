@@ -7,6 +7,7 @@ dist
 build
 .nuxt
 .output
+*.tsbuildinfo
 
 # Environment
 .env
@@ -28,11 +29,40 @@ pnpm-debug.log*
 # Testing
 coverage
 
+# Cache directories
+.cache
+.temp
+.nx/cache
+.nx/workspace-data
+.swc
+node_modules/.cache
+node_modules/.vite
+**/node_modules/.cache
+**/node_modules/.vite
+
 # Misc
 .DS_Store
 *.pem
-.cache
-.temp 
+Thumbs.db
+
 # Nuxt dev/build outputs
 .data
 .nitro
+
+# Vue generated files
+**/*.vue.d.ts
+**/*.vue.js
+**/*.vue.js.map
+
+# IDE and Editor files
+*.swp
+*.swo
+*~
+.project
+.settings
+.classpath
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?

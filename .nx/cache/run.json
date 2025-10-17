@@ -1,18 +1,29 @@
 {
   "run": {
-    "command": "nx build backoffice",
-    "startTime": "2025-05-23T21:11:41.500Z",
-    "endTime": "2025-05-23T21:11:46.249Z",
+    "command": "nx run-many --target=test --all",
+    "startTime": "2025-10-17T22:16:42.382Z",
+    "endTime": "2025-10-17T22:16:45.991Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "backoffice:build:production",
-      "target": "build",
+      "taskId": "api:test",
+      "target": "test",
+      "projectName": "api",
+      "hash": "10520462039860752201",
+      "startTime": "2025-10-17T22:16:42.402Z",
+      "endTime": "2025-10-17T22:16:42.421Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "backoffice:test",
+      "target": "test",
       "projectName": "backoffice",
-      "hash": "10392345346762882661",
-      "startTime": "2025-05-23T21:11:41.516Z",
-      "endTime": "2025-05-23T21:11:46.227Z",
+      "hash": "9599096247668530708",
+      "startTime": "2025-10-17T22:16:42.402Z",
+      "endTime": "2025-10-17T22:16:45.970Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

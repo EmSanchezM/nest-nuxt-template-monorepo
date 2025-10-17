@@ -1,7 +1,8 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "files": {
+    "ignoreUnknown": true
   },
   "linter": {
     "enabled": true,
@@ -19,8 +20,15 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
-      "trailingComma": "es5",
+      "trailingCommas": "es5",
       "semicolons": "always"
     }
-  }
-} 
+  },
+  "overrides": [
+    {
+      "includes": [".nx/**", "dist/**", "coverage/**", "apps/*/.output/**", "*.min.js"],
+      "linter": { "enabled": false },
+      "formatter": { "enabled": false }
+    }
+  ]
+}

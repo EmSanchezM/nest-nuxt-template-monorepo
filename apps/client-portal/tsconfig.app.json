@@ -1,7 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "composite": true
+    "composite": true,
+    "declaration": true,
+    "outDir": "./dist"
   },
   "include": [".nuxt/nuxt.d.ts", "src/**/*"],
   "exclude": []
