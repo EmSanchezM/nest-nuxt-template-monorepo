@@ -718,5 +718,85 @@
       ],
       "command": "pnpm exec nx watch --projects client-portal --includeDependentProjects -- pnpm exec nx build-deps client-portal"
     }
+  },
+  "18329507392787679607": {
+    "build": {
+      "command": "nuxt build",
+      "options": {
+        "cwd": "apps/client-portal"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "nuxt"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/.nuxt",
+        "{projectRoot}/.output"
+      ]
+    },
+    "serve": {
+      "command": "nuxt dev",
+      "options": {
+        "cwd": "apps/client-portal"
+      },
+      "continuous": true
+    },
+    "serve-static": {
+      "dependsOn": [
+        "build-static"
+      ],
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-static",
+        "staticFilePath": "{projectRoot}/dist",
+        "port": 4200,
+        "spa": false
+      }
+    },
+    "build-static": {
+      "command": "nuxt build --prerender",
+      "options": {
+        "cwd": "apps/client-portal"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-static"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "nuxt"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/.nuxt",
+        "{projectRoot}/.output"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "continuous": true,
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "pnpm exec nx watch --projects client-portal --includeDependentProjects -- pnpm exec nx build-deps client-portal"
+    }
   }
 }

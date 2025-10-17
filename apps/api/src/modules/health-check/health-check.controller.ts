@@ -1,25 +1,27 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, HttpCode, HttpStatus } from '@nestjs/common';
 
-interface HealthCheckResponse {
+export interface HealthCheckResponse {
   status: string;
   message: string;
 }
 
-@Controller()
+@Controller('health')
 export class HealthCheckController {
   @Get()
-  async getHealthCheck(): Promise<HealthCheckResponse> {
+  @HttpCode(HttpStatus.OK)
+  getHealthCheck(): HealthCheckResponse {
     return {
-        status: 'ok',
-        message: 'I am alive'
+      status: 'ok',
+      message: 'I am alive'
     };
   }
 
-  @Get('/health-check')
-  async getHealthCheckApi(): Promise<HealthCheckResponse> {
+  @Get('check')
+  @HttpCode(HttpStatus.OK)
+  getHealthCheckApi(): HealthCheckResponse {
     return {
       status: 'ok',
-      message: 'I am alive',
+      message: 'Health check endpoint'
     };
   }
 }

@@ -1,0 +1,14 @@
+{
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+  "typescript.preferences.includeExternalModuleExports": false,
+  "typescript.tsc.autoDetect": "off",
+  "typescript.format.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.associations": {
+    "*.ts": "typescript"
+  }
+}

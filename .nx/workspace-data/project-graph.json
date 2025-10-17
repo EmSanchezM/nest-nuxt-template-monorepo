@@ -15197,6 +15197,11 @@
       },
       {
         "source": "api",
+        "target": "npm:reflect-metadata",
+        "type": "static"
+      },
+      {
+        "source": "api",
         "target": "npm:@nestjs/core",
         "type": "static"
       },
@@ -35178,5 +35183,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1760740146169
+  "computedAt": 1760741883392
 }

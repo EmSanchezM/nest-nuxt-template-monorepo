@@ -8,7 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2019",
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
@@ -17,7 +17,8 @@
     "paths": {},
     "strictPropertyInitialization": false,
     "noImplicitThis": false,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "strict": false
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -15,56 +15,6 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "api": [
-        {
-          "file": "apps/api/jest.config.ts",
-          "hash": "1761640145985712211"
-        },
-        {
-          "file": "apps/api/project.json",
-          "hash": "12951829832419890778"
-        },
-        {
-          "file": "apps/api/src/app.module.ts",
-          "hash": "17336111856962853105",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/src/main.ts",
-          "hash": "1356897685036895611",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/health-check/health-check.controller.ts",
-          "hash": "4306584087696115442",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/src/modules/health-check/health-check.module.ts",
-          "hash": "17436341397981248600",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/tsconfig.app.json",
-          "hash": "12702311813890680256"
-        },
-        {
-          "file": "apps/api/webpack.config.js",
-          "hash": "3859180910370152010",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
       "backoffice": [
         {
           "file": "apps/backoffice/index.html",
@@ -227,6 +177,61 @@
           "file": "apps/client-portal/tsconfig.json",
           "hash": "11580670235145906051"
         }
+      ],
+      "api": [
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "1761640145985712211"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "12951829832419890778"
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "17336111856962853105",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "13576811046004573462",
+          "deps": [
+            "npm:reflect-metadata",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/health-check/health-check.controller.ts",
+          "hash": "12496455088440489458",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/modules/health-check/health-check.module.ts",
+          "hash": "17436341397981248600",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "16316704658040599606"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "16912059711070967218"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "3859180910370152010",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
       ]
     },
     "nonProjectFiles": [
@@ -241,6 +246,10 @@
       {
         "file": ".vscode/extensions.json",
         "hash": "17569899701928424576"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "8046074927206823779"
       },
       {
         "file": "biome.json",
@@ -268,7 +277,7 @@
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "10555582535746243490"
+        "hash": "4525144895668989254"
       }
     ]
   },
